@@ -7,8 +7,9 @@ const ref = {
 };
 
 ref.button.addEventListener('click', () => {
-  ref.body.style.backgroundColor = getRandomHexColor();
-  ref.span.textContent = getRandomHexColor();
+  const color = getRandomHexColor();
+  ref.body.style.backgroundColor = color;
+  ref.span.textContent = color;
 });
 
 function getRandomHexColor() {
